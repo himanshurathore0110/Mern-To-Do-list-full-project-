@@ -1,0 +1,83 @@
+/* Full page gradient background */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Main container */
+.container {
+  width: 320px;
+  margin: 80px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Input and Add button */
+input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Task list */
+ul {
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Each task item */
+li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+/* Left side (checkbox + text) */
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Completed task */
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button */
+li button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+li button:hover {
+  background-color: #e60000;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
